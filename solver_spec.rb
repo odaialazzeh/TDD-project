@@ -19,4 +19,14 @@ RSpec.describe Solver do
     end
   end
 
+  describe '#reverse' do
+    it 'returns empty string when given an empty string' do
+      expect(solver.reverse('')).to eq ''
+    end
+
+    it 'returns the reversed string when given a non-empty string' do
+      expect(solver.reverse('hello')).to eq 'olleh'
+    end
+  end
+  
 end
