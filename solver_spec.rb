@@ -1,3 +1,5 @@
+require './solver'
+
 RSpec.describe Solver do
   let(:solver) { Solver.new }
 
